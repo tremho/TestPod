@@ -20,6 +20,17 @@ it, simply add the following line to your Podfile:
 pod 'TestPod'
 ```
 
+## Use
+This is just a test example. It simply exposes a trivial class that reports a greeting message.
+The library is written in Swift.
+
+import TestPod
+
+        var test = SimpleTest()
+        var str = test.announce()
+	
+	// str = "Greetings from Swift code in a library"
+
 ## Author
 
 Tremho, steve@ohmert.com
