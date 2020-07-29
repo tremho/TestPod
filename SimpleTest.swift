@@ -10,7 +10,7 @@ import Foundation
 
 @objc public class SimpleTest : NSObject {
     
-    public func announce() -> String {
+    @objc public func announce() -> String {
         return "Greetings from Swift code in a library"
     }
 }

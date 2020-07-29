@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var test = SimpleTest()
-        var str = test.announce()
+        let test = SimpleTest()
+        let str = test.announce()
         headerView = UIView()
         headerView.backgroundColor = .lightText
         self.view.addSubview(headerView)
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         // Set position of views using constraints
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        headerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor)
-        headerView.topAnchor.constraint(equalTo: self.view.topAnchor)
+        _ = headerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor)
+        _ = headerView.topAnchor.constraint(equalTo: self.view.topAnchor)
         headerView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
         headerView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.1).isActive = true
         
